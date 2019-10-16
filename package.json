@@ -1,0 +1,23 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "WeatherApp",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Weather"
+  ],
+  "author": "ThunderGod",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^2.0.2"
+  },
+  "dependencies": {
+    "chart.js": "^2.7.2",
+    "electron-packager": "^8.6.0",
+    "jquery": "^3.3.1"
+  }
+}

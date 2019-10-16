@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World!</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Jua" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="leftSide">
+    <h1>Weather</h1>
+
+    <div id="form">
+      <input type="text" id="location" placeholder="Location">
+      <a id="search" class="waves-effect waves-orange btn">Search</a>
+    </div>
+
+
+  </div>
+
+  <div id="rightSide">
+    <header style="display: flex;">
+      <img src="img/refreshIcon.png" id="refreshButton" alt="refresh">
+      <h1 id="cityName"></h1>
+    </header>
+    <div id="results" style="display: block">
+      <div>
+        <div style="display: flex; width: 50%">
+          <h1 id="currentTemp"></h1>
+          <img id="weatherImage" src="" alt="">
+        </div>
+      </div>
+      <div style="display: flex;">
+        <div style="width: 50%;">
+          <p>Max Temperature:
+            <span class="info" id="maxTemp"></span>
+          </p>
+          <p>Min Temperature:
+            <span class="info" id="minTemp"></span>
+          </p>
+        </div>
+        <div style="width: 50%;">
+          <p>Weather:
+            <span class="info" id="mainWeather"></span>
+          </p>
+          <p>Description:
+            <span class="info" id="weatherDescription"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="nextDays">
+      <div class="dayContainer">
+        <h1 id="currentTemp"></h1>
+        <img id="weatherImage" src="" alt="">
+        <div>
+          <span class="info" id="minTemp"></span>
+          <span class="info" id="maxTemp"></span>
+        </div>
+        <h1 id="dayName"></h1>
+      </div>
+      <div class="dayContainer">
+        <h1 id="currentTemp"></h1>
+        <img id="weatherImage" src="" alt="">
+        <div>
+          <span class="info" id="minTemp"></span>
+          <span class="info" id="maxTemp"></span>
+        </div>
+        <h1 id="dayName"></h1>
+      </div>
+      <div class="dayContainer">
+        <h1 id="currentTemp"></h1>
+        <img id="weatherImage" src="" alt="">
+        <div>
+          <span class="info" id="minTemp"></span>
+          <span class="info" id="maxTemp"></span>
+        </div>
+        <h1 id="dayName"></h1>
+      </div>
+      <div class="dayContainer">
+        <h1 id="currentTemp"></h1>
+        <img id="weatherImage" src="" alt="">
+        <div>
+          <span class="info" id="minTemp"></span>
+          <span class="info" id="maxTemp"></span>
+        </div>
+        <h1 id="dayName"></h1>
+      </div>
+      <div class="dayContainer">
+        <h1 id="currentTemp"></h1>
+        <img id="weatherImage" src="" alt="">
+        <div>
+          <span class="info" id="minTemp"></span>
+          <span class="info" id="maxTemp"></span>
+        </div>
+        <h1 id="dayName"></h1>
+      </div>
+    </div>
+    <div>
+      <canvas id="myChart"></canvas>
+    </div>
+    <div>
+      <p id="showNextDays" class="clickableLink">Show Next 5 Days</p>
+    </div>
+  </div>
+  <div class="spinner"></div>
+  <script src="renderer.js"></script>
+</body>
+
+</html>
